@@ -27,7 +27,7 @@ public class GameAPI {
     }
 
     public static int evaluate(int[] board, int turn, int depth) {
-        if (state(board) != DRAW) return ((10-depth)*state(board));
+        if (state(board) != DRAW) return ((Integer.MAX_VALUE - depth) * state(board));
         int bestScore = (turn == X)? Integer.MIN_VALUE : Integer.MAX_VALUE;
         int moveCount = 0;
         for (int move=0; move<9; move++) {
