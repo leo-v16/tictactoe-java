@@ -148,6 +148,5 @@ public class GameView extends Frame implements ActionListener {
         }
 
         if (!playerXTurn) aiTurn();
-        // playerXTurn = true;
     }
 }
